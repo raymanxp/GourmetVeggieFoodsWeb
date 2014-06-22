@@ -1,0 +1,79 @@
+body {
+	font-family: "Open Sans Condensed";			
+	margin:0;
+}
+h1 { 
+	font-size: 5em;				
+}
+nav {
+	display:block;
+	float:right;
+	margin: 10px;			
+}
+nav a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+div {
+	margin: 20px;
+}
+header {
+	overflow: auto;
+	width: 100%;
+	background-color: orange;
+}
+footer {
+	
+}
+a { text-decoration: none; color: #fff; }
+#banner-text {			
+	margin:0;
+}
+#banner-text h1 {
+	color: #fff;
+	font-family: "Open Sans Condensed";
+	font-weight: normal;
+	margin: 0 0 0 10px;
+}
+.top {
+	margin-left: auto; margin-right:auto;
+	width:100%;
+	/*border-top: 1px solid orange;*/
+}
+.top a {			
+	text-align: center;
+	color: orange;
+}
+
+.triangle {
+	margin: 0;
+	position: relative;	
+	background-color: transparent;
+	border: 1px solid orange;
+	border-bottom-color: transparent;
+}
+.triangle:after, .triangle:before {
+	bottom:100%;
+	left:50%;
+	content: " ";
+	height: 0; width: 0;
+	position: absolute;
+	border: solid transparent;	
+}
+.triangle:after {
+	border-color: transparent;
+	border-bottom-color: white;
+	border-width: 18px;
+	margin-left: -38px;
+}
+.triangle:before {
+	border-color: transparent;
+	border-bottom-color: orange;
+	border-width: 20px;
+	margin-left: -40px;
+}
+#location {
+	margin-left: 20px;
+}
