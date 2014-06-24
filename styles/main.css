@@ -53,6 +53,12 @@ a { font-weight: 900; text-decoration: none; color: #fff; }
 p {
     color: #666;
 }
+
+div[id^="section-"]::after{
+    position: absolute;
+    height: 50px; width: 100%;
+    background-color: orange;
+}
 /* 
     Reusable Styles
 */
@@ -108,8 +114,13 @@ p {
 img#farmers-market-logo {
 	height: 70px; width: auto;
 }
-div[id^="section-"]::after{
-    position: absolute;
-    height: 50px; width: 100%;
+.question-mark-dressing{
+    display: inline-block;
+    color: #fff;
+    font-family: "Roboto";
+    border: 2px solid orange;
     background-color: orange;
+    border-radius: 100%;
+    padding: 0 .25em 0 .5em;
+    box-shadow: 0 0 0 2px #fff inset;
 }
