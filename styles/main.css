@@ -4,23 +4,25 @@
 body {
 	font-family: "Open Sans";			
 	margin:0;
-    font-size: 1em;
-    line-height: 1.7em;
+    font-size: 1em;    
 }
 h1, h2, h3 {    
     font-family: "Open Sans Condensed";
+    line-height: 1em;
+    margin: 1em 1em;
 }
 h1, h2 {
-    margin: 1.5em 0 .5em 0;
+    /*margin: 1.5em 0 .5em 0;*/
+    
 }
 h1 {    
-	font-size: 5em;
-    line-height: 1em;
+	font-size: 5em;    
     letter-spacing: 3px;
 }
 h2 {
     font-size: 3em;
     letter-spacing: 4px;
+/*    background-color: rgba(253, 253, 253, .7);*/
 }
 h3 { 
     letter-spacing: 3px;
@@ -37,28 +39,40 @@ nav a{
 	padding: 0 10px;
     font-weight: normal;
 }
+/*
 div {
 	margin: 20px;
 }
+*/
 header {
 	overflow: auto;
 	width: 100%;
-	/*background-color: orange;*/
+	background-color: #fdfdfd;
 	border-bottom: 1px solid orange;
 }
 footer {
-	
+	background-color: #fdfdfd;
 }
 a { font-weight: 900; text-decoration: none; color: #fff; }
 p {
-    color: #666;
+    color: #000;
+    line-height: 1.7em;
+    background: rgba(247, 247, 247, .67);
+    padding:2em 4em;
+}
+p:before {
+    content: " ";
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
+body{
+    display:block;
+    position:relative;
+    margin:0;
+    background: linear-gradient(rgba(255, 118, 0, 1), rgba(255, 147, 0, 1));    
 }
 
-div[id^="section-"]::after{
-    position: absolute;
-    height: 50px; width: 100%;
-    background-color: orange;
-}
 /* 
     Reusable Styles
 */
