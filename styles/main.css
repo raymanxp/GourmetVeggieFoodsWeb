@@ -1,42 +1,51 @@
 /* 
     CSS for HTML Tag elements 
 */
+
 body {
-	font-family: "Open Sans";			
-	margin:0;
-    font-size: 1em;    
+    font-family: "Open Sans";
+    margin: 0;
+    font-size: 90%;
+    line-height: 1.7;
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(rgba(255, 118, 0, 1), rgba(255, 147, 0, 1));
 }
-h1, h2, h3 {    
+h1,
+h2,
+h3 {
     font-family: "Open Sans Condensed";
-    line-height: 1em;
-    margin: 1em 1em;
+    line-height: 1.5;
+    margin: 0;
+    color: #fdfdfd;
 }
-h1, h2 {
-    /*margin: 1.5em 0 .5em 0;*/
+h2,
+h3 {
+    line-height: 2;
     
 }
-h1 {    
-	font-size: 5em;    
+h1 {
+    font-size: 4rem;
     letter-spacing: 3px;
 }
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     letter-spacing: 4px;
-/*    background-color: rgba(253, 253, 253, .7);*/
+    /*    background-color: rgba(253, 253, 253, .7);*/
 }
-h3 { 
+h3 {
     letter-spacing: 3px;
 }
 nav {
-	display:block;
-	float:right;
-	margin: 10px;			
+    display: block;
+    float: right;
+    margin: 10px;
 }
-nav a{
-	color: orange;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 0 10px;
+nav a {
+    color: #fdfdfd;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
     font-weight: normal;
 }
 /*
@@ -44,21 +53,26 @@ div {
 	margin: 20px;
 }
 */
-header {
-	overflow: auto;
-	width: 100%;
-	background-color: #fdfdfd;
-	border-bottom: 1px solid orange;
+
+.banner-header {
+    overflow: auto;
+    width: 100%;
+/*    background-color: rgba(253, 253, 253);*/
+    border-bottom: 2px solid #fdfdfd;
 }
 footer {
-	background-color: #fdfdfd;
+    background-color: #fdfdfd;
 }
-a { font-weight: 900; text-decoration: none; color: #fff; }
+a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
 p {
     color: #000;
-    line-height: 1.7em;
+    /*    line-height: 1.7em;*/
     background: rgba(247, 247, 247, .67);
-    padding:2em 4em;
+    padding: 2em 4em;
 }
 p:before {
     content: " ";
@@ -66,69 +80,76 @@ p:before {
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
 }
-body{
-    display:block;
-    position:relative;
-    margin:0;
-    background: linear-gradient(rgba(255, 118, 0, 1), rgba(255, 147, 0, 1));    
-}
-
 /* 
     Reusable Styles
 */
-#banner-text {			
-	margin:0;
+
+#banner-text {
+    margin: 0;
 }
-#banner-text h1 {		
-	font-weight: normal;
-	margin: 0 0 0 10px;
+#banner-text h1 {
+    font-weight: normal;
+    margin: 0 0 0 20px;
 }
 .center {
-    margin-left: auto; margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .top {
-	margin-left: auto; margin-right:auto;
-	width:100%;
-	/*border-top: 1px solid orange;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*border-top: 1px solid orange;*/
 }
-.top a {	
-	color: orange;
+.top a {
+    color: orange;
 }
-
 .triangle {
-	margin: 0;
-	position: relative;	
-	background-color: transparent;
-	border: 1px solid orange;
-	border-bottom-color: transparent;
+    margin: 0;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-bottom-color: transparent;
 }
-.triangle:after, .triangle:before {
-	bottom:100%;
-	left:50%;
-	content: " ";
-	height: 0; width: 0;
-	position: absolute;
-	border: solid transparent;	
+.triangle:after,
+.triangle:before {
+    bottom: 100%;
+    left: 50%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: solid transparent;
 }
 .triangle:after {
-	border-color: transparent;
-	border-bottom-color: white;
-	border-width: 9px;
-	margin-left: -19px;
+    border-color: transparent;
+    border-bottom-color: white;
+    border-width: 9px;
+    margin-left: -19px;
 }
 .triangle:before {
-	border-color: transparent;
-	border-bottom-color: orange;
-	border-width: 10px;
-	margin-left: -20px;
+    border-color: transparent;
+    border-bottom-color: orange;
+    border-width: 10px;
+    margin-left: -20px;
 }
 #location {
-	margin-left: 40px;
+    margin-left: 40px;
 }
 img#farmers-market-logo {
-	height: 70px; width: auto;
+    height: 70px;
+    width: auto;
 }
-.question-mark-dressing{
+#main-wrapper {
+}
+section[id^="section"]{
+    margin-bottom: 50px;
+    min-height: 500px;
+}
+.section-for-skrollr {
+    height: 100%;
+}
+.question-mark-dressing {
     display: inline-block;
     color: #fff;
     font-family: "Roboto";
@@ -138,3 +159,19 @@ img#farmers-market-logo {
     padding: 0 .25em 0 .5em;
     box-shadow: 0 0 0 2px #fff inset;
 }
+.section-content {
+    display:block;
+    margin: 0 auto;
+    width: 95%;
+    min-height: 500px;
+}
+#sectionWelcome-background-container{
+    background-image: url('../images/HFM-overlook-01.jpg');
+    background-size: cover;
+    height:inherit;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-position: 50% 0px;
+}
+
