@@ -68,7 +68,7 @@ a {
     text-decoration: none;
     color: #fff;
 }
-p {
+#content-wrapper p {
     color: #000;
     /*    line-height: 1.7em;*/
     background: rgba(247, 247, 247, .67);
@@ -103,6 +103,8 @@ p:before {
 }
 .top a {
     color: orange;
+    display:block;
+    text-align: center;
 }
 .triangle {
     margin: 0;
@@ -135,6 +137,9 @@ p:before {
 }
 #location {
     margin-left: 40px;
+}
+#location h3 {
+    color: #000;
 }
 img#farmers-market-logo {
     height: 70px;
