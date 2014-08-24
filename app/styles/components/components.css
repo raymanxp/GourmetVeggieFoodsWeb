@@ -2158,8 +2158,8 @@ h2 {
 
 .xxlarge,
 h1 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-size: 42px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 38px;
   font-weight: 300;
   line-height: 1.2381em;
   /* 52px */
@@ -2169,7 +2169,7 @@ h1 {
 @media only screen and (min-width: 800px) {
   .xxlarge,
   h1 {
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 68px;
     font-weight: 300;
     line-height: 1.1471em;
@@ -2231,9 +2231,9 @@ li > p {
 }
 
 .button--primary {
-  background: #4285f4;
+  background: #ff7600;
   color: white;
-  border: 1px solid #1266f1;
+  border: 1px solid #ffd094;
 }
 
 .button--secondary {
@@ -2651,7 +2651,8 @@ table {
   width: 100%;
 }
 table thead {
-  background: #3372df;
+/*  background: #3372df;*/
+	background:#ff7600;
   color: #ffffff;
 }
 table th {
@@ -2691,7 +2692,7 @@ table td::before {
   content: attr(data-th) " :";
   display: inline-block;
   color: #ffffff;
-  background: #3372df;
+  background: #ff7600;
   border-right: 2px solid #ffffff;
   position: absolute;
   top: 0;
